@@ -1,0 +1,134 @@
+html, body {
+	font-family: "Montserrat","Arial",sans-serif!important;
+	color: #555555!important;
+}
+
+/* Navigation Bar */
+
+nav {
+	z-index: 50;
+	box-shadow: 0 3px 10px 3px rgba(0,0,0,0.2);
+	height: 4rem;
+	overflow: hidden;
+}
+
+/* Logo & Wordmark Styling */
+.colmarLogo {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.navSVG {
+	min-width: 2rem;
+}
+#logoWordmark {
+	font-family: "Montserrat","Arial",sans-serif;
+	padding-left: 0.5rem;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #22C8C2;
+}
+#logoWordmark2 {
+	font-weight: 400;
+	color: #73E2DE;
+}
+
+/* Nav Link Styling */
+.nav-item:nth-last-child(1n+2) {
+	padding-right: 1rem;
+}
+
+.nav-item a, .nav-item a:hover, .nav-item a:active, .nav-item a:visited {
+	color: #555555;
+}
+.nav-item a:hover {
+	text-decoration: none;
+	color: #22C8C2;
+}
+
+/* Landing image and callout */
+.landing {
+	height: 40rem;
+	overflow: hidden;
+}
+
+.landing-callout h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+.landing-callout h2 {
+	margin-bottom: 3rem;
+}
+
+.landing-splash {
+	background: url("../images/banner.jpg") right top no-repeat;
+	background-size: cover;
+}
+
+.landing-callout {
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #EEEEEE;
+}
+.landing-callout div {
+	padding: 0 2rem;
+}
+
+#enroll {
+	height: 3rem;
+	background-color: #22C8C2;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
+#enroll:active {
+	background-color: #73E2DE;
+}
+.landing-callout a:hover {
+	text-decoration: none;
+}
+
+/* News & information */
+.news {
+	margin-top: 2rem;
+}
+
+/* Main news callout */
+.news-main img {
+	width: 100%;
+}
+.news-main h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	margin: 2rem 0;
+}
+
+/* Minor news and information */
+.news-small {
+	padding-bottom: 2rem;
+}
+.news-small h3 {
+	font-weight: 700;
+}
+.news-small a {
+	color: #22C8C2;
+}
+.news-small a:hover {
+	text-decoration: none;
+	color: #73E2DE;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+	.landing {
+		height: 20rem;
+	}
+	.landing-callout {
+		height: auto;
+		padding: 2rem;
+	}
+}
