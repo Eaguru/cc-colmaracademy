@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-	<nav class="navbar">
+	<nav class="navbar fixed-top">
 		<!-- Logo & wordmark -->
 		<div class="colmarLogo d-none d-md-flex">
 			<img class="navSVG" src="./resources/images/ic-logo.svg">
@@ -58,7 +58,7 @@
 				<div class="news-main">
 					<img src="./resources/images/information-main.jpg">
 					<h1>It doesn't hurt to keep practicing.</h1>
-					<p>"More students than ever are finding success after attending Colmar Academy. Over 84% of job candidates from Colmar Academy are accepted for their first job within 2 months of graduation!"</p>
+					<p class="paragraph-large">"More students than ever are finding success after attending Colmar Academy. Over 84% of job candidates from Colmar Academy are accepted for their first job within 2 months of graduation!"</p>
 					<p>Emmanuel DeSanta, Senior Stategist at Hiring.com</p>
 				</div>
 			</div>
@@ -107,5 +107,134 @@
 			</div>
 		</div>
 	</section>
-</body>
-</html>
+
+	<!-- Start learning -->
+	<section class="container-fluid learn">
+		<div class="d-flex justify-content-center">
+			<h1>Start learning</h1>
+		</div>
+		<!-- Large screen blocks -->
+		<div class="row d-none d-md-flex">
+			<div class="col-md-4 d-flex justify-content-center">
+				<div class="learn-block">
+					<a href="#"><img class="img-fluid" src="./resources/images/course-software.jpg"></a>
+					<h3>Programming</h3>
+					<p>COURSES</p>
+					<p>Java, C, C++, C#</p>
+				</div>
+			</div>
+			<div class="col-md-4 d-flex justify-content-center">
+				<div class="learn-block">
+					<a href="#"><img class="img-fluid" src="./resources/images/course-computer-art.jpg"></a>
+					<h3>Mobile and web development</h3>
+					<p>COURSES</p>
+					<p>Web Development, Mobile Development, iOT, APIs</p>
+				</div>
+			</div>
+			<div class="col-md-4 d-flex justify-content-center">
+				<div class="learn-block">
+					<a href="#"><img class="img-fluid" src="./resources/images/course-design.jpg"></a>
+					<h3>Photography and videography</h3>
+					<p>COURSES</p>
+					<p>Photography, Videography, Editing, Printing, Commercial Processes, Portfolio Development</p>
+				</div>
+			</div>
+		</div>
+		<div class="row d-none d-md-flex">
+			<div class="col-md-4 d-flex justify-content-center">
+				<div class="learn-block">
+					<a href="#"><img class="img-fluid" src="./resources/images/course-data.jpg"></a>
+					<h3>Data management</h3>
+					<p>COURSES</p>
+					<p>Data Science, Big Data, SQL, Data Visualization</p>
+				</div>
+			</div>
+			<div class="col-md-4 d-flex justify-content-center">
+				<div class="learn-block">
+					<a href="#"><img class="img-fluid" src="./resources/images/course-business.jpg"></a>
+					<h3>Business</h3>
+					<p>COURSES</p>
+					<p>Product Development, Business Development, Startup</p>
+				</div>
+			</div>
+			<div class="col-md-4 d-flex justify-content-center">
+				<div class="learn-block"></a>
+					<a href="#"><img class="img-fluid" src="./resources/images/course-marketing.jpg"></a>
+					<h3>Marketing</h3>
+					<p>COURSES</p>
+					<p>Analytics, Content Marketing, Mobile Marketing</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Mobile screen blocks -->
+		<div class="d-md-none learn-mobile">
+			<a href="#">Programming</a>
+			<a href="#">Mobile and web development</a>
+			<a href="#">Photography and videography</a>
+			<a href="#">Data management</a>
+			<a href="#">Business</a>
+			<a href="#">Marketing</a>
+		</div>
+	</section>
+
+	<!-- Thesis exhibit -->
+	<section class="container-fluid thesis">
+		<div class="d-flex justify-content-center">
+			<h1>Thesis exhibits</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="thesis-main">
+					<video autoplay loop>
+						<source src="./resources/videos/thesis.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<h1>Reimagine urban</h1>
+						<p class="paragraph-large">The world ahead needs reimagined urban structures. Sustainability, function, and beauty are all parts of a single puzzle in the future—a puzzle that cannot be completed without all the pieces put together.</p>
+					</div>
+				</div>
+				<div class="col-md-5 d-none d-md-block">
+					<div class="d-flex news-small">
+						<div>
+							<img class="img-fluid" src="./resources/images/thesis-fisma.jpg">						
+						</div>
+						<div class="container-fluid">
+							<h3>Fisma: Design and Prototype</h3>
+							<p>Showcase of a new designer product turning our idea of daily living on its head.</p>
+							<a href="#">Find out more</a>
+						</div>
+					</div>
+
+					<div class="d-flex news-small">
+						<div>
+							<img class="img-fluid" src="./resources/images/thesis-now-and-then.jpg">						
+						</div>
+						<div class="container-fluid">
+							<h3>Now and Then</h3>
+							<p>Research and study about New York's sustainability and future trends.</p>
+							<a href="#">Find out more</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="navbar d-flex">
+			<!-- Logo & wordmark -->
+			<div class="d-flex">
+				<p>&copy; 2018 Colmar Academy. All rights reserved.</p>
+			</div>
+
+			<!-- Navigation links -->
+			<div class="justify-content-right">
+				<ul class="nav d-none d-md-flex">
+					<li class="nav-item"><a href="#">Terms</a></li>
+					<li class="nav-item"><a href="#">Privacy</a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+	</html>
